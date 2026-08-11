@@ -1,0 +1,27 @@
+# TradeCycling Configuration
+
+# Does the player need to sneak (hold Shift) to reroll trades?
+require-sneak: true
+
+# Item that must be held in hand to reroll. Leave EMPTY ("") = any item / empty hand allowed.
+# Example: "STICK"
+required-item: ""
+
+# Cooldown in seconds PER VILLAGER between two reroll attempts
+cooldown-seconds: 5
+
+# Also reset how many times each trade has already been used (max-uses), in addition to rerolling?
+reset-uses: true
+
+# Sound played on a successful reroll. Leave empty ("") to disable.
+success-sound: "ENTITY_VILLAGER_WORK_LIBRARIAN"
+
+# Particle effect on reroll. Leave empty ("") to disable.
+success-particle: "HAPPY_VILLAGER"
+
+messages:
+  refreshed: "&aTrade offers have been refreshed!"
+  cooldown: "&cThis villager needs to recover first. (&e%seconds%s&c)"
+  no-permission: "&cYou don't have permission to do that."
+  wrong-item: "&cYou need the correct item in hand to reroll trades."
+  reloaded: "&aTradeCycling configuration reloaded."

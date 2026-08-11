@@ -1,0 +1,20 @@
+name: TradeCycling
+version: '1.0.0'
+main: de.felix.tradecycling.TradeCyclingPlugin
+api-version: '1.20'
+author: Felix
+description: Refresh villager trades without needing to break workstations.
+
+commands:
+  tradecycling:
+    description: Reload TradeCycling config
+    usage: /tradecycling reload
+    permission: tradecycling.admin
+
+permissions:
+  tradecycling.use:
+    description: Allows refreshing villager trades
+    default: true
+  tradecycling.admin:
+    description: Allows reloading the plugin config
+    default: op
